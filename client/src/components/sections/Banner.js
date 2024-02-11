@@ -1,22 +1,63 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import background from "../../assets/banner.png";
 
 function Banner() {
+  const [screenWidth, setScreenWidth] = useState(0);
+  const [typedText, setTypedText] = useState("");
+  const [typedIndex, setTypedIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
+  const [isWaiting, setIsWaiting] = useState(false);
+
+  const typedItems = useMemo(() => ["Designer|", "Developer|", "Freelancer|", "Photographer|"], []);
+
+  const getWidth = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    getWidth();
+    window.addEventListener("resize", getWidth);
+    return () => window.removeEventListener("resize", getWidth);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (isTyping) {
+        if (typedText.length < typedItems[typedIndex].length) {
+          setTypedText((prevText) => prevText + typedItems[typedIndex][typedText.length]);
+        } else {
+          setIsTyping(false);
+          setIsWaiting(true);
+          setTimeout(() => {
+            setIsWaiting(false);
+            setIsTyping(false);
+          }, 1500); // Wait for 1 second before removing
+        }
+      } else if (!isTyping && !isWaiting && typedText.length > 0) {
+        setTypedText((prevText) => prevText.slice(0, -1));
+      } else if (!isTyping && !isWaiting && typedText.length === 0) {
+        setIsTyping(true);
+        setTypedIndex((prevIndex) => (prevIndex + 1) % typedItems.length);
+      }
+    }, 100); // Adjust typing speed as needed
+
+    return () => clearInterval(interval);
+  }, [typedText, typedIndex, isTyping, typedItems, isWaiting]);
+
   return (
     <div>
       <div
         className="fixed top-0 left-0 h-[100vh] w-full bg-center"
-        style={{ background: `url(${background})`,backgroundSize:"cover", zIndex: "-1" }}
+        style={{
+          background: screenWidth > 640 ? `url(${background})` : "",
+          backgroundSize: screenWidth < 979 ? "contain" : "cover",
+          backgroundRepeat: "no-repeat",
+          zIndex: "-1",
+        }}
       ></div>
-      <div className=" w-full h-[90vh] bg-bannerBlur flex flex-col items-center justify-center">
-        <p className="text-white text-7xl font-semibold">I am Mahak Agarwal</p>
-        <p className="text-white text-4xl mt-10">Developer |</p>
-        <p className="hero-subtitle text-white">
-          <span
-            class="typed"
-            data-typed-items="Designer, Developer, Freelancer, Photographer"
-          ></span>
-        </p>
+      <div className="w-full py-16 sm:py-0 min-h-[30vh] sm:min-h-[50vh] md:min-h-[70vh] lg:min-h-[90vh] bg-[rgb(4,35,47,1)] sm:bg-bannerBlur flex flex-col items-center justify-center px-4">
+        <p className="text-white text-6xl sm:text-7xl font-semibold">I am Mahak Agarwal</p>
+        <p className="hero-subtitle text-white  text-3xl sm:text-4xl mt-5" style={{ height: "50px", overflow: "hidden" }}>{typedText}</p>
       </div>
     </div>
   );

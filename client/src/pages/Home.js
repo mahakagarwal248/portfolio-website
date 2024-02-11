@@ -1,4 +1,5 @@
 import About from "../components/sections/About";
+import Achievements from "../components/sections/Achievements";
 import Banner from "../components/sections/Banner";
 import Experience from "../components/sections/Experience";
 import Footer from "../components/sections/Footer";
@@ -14,6 +15,7 @@ function Home() {
       <Experience />
       <Skills />
       <Portfolio />
+      <Achievements />
       <GetInTouch />
       <Footer />
     </div>

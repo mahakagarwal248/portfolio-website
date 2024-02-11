@@ -1,6 +1,6 @@
 function SkillsComp({ text, percentage }) {
   return (
-    <div className="flex-half px-5 mt-4">
+    <div className="sm:flex-half flex-full px-5 mt-4">
       <div className="flex justify-between w-11/12">
         <p className="text-lg font-semibold text-white">{text}</p>
         <p className="text-lg text-white">{percentage}</p>

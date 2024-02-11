@@ -22,10 +22,13 @@ const experienceData = [
 function Experience() {
   return (
     <div id="work-history" className="bg-white py-16">
-      <p className="text-5xl font-bold">WORK HISTORY</p>
-      <div className="mt-16 w-4/5 m-auto">
+      <p className="text-4xl md:text-5xl font-bold">WORK HISTORY</p>
+      <div className="mt-16 w-11/12 pr-5 md:pr-0 lg:w-4/5 m-auto">
         <div className="flex flex-row">
           <div className="flex-1">
+            <p className="md:hidden w-4/5 m-auto mt-5 text-xl italic text-left">
+              {experienceData[0].date}
+            </p>
             <ExperienceCard
               title={experienceData[0].title}
               company={experienceData[0].company}
@@ -41,14 +44,14 @@ function Experience() {
               style={{ marginLeft: "-36px" }}
             />
           </div>
-          <div className="flex-1 text-left">
+          <div className="hidden md:block flex-1 text-left">
             <p className="ml-14 mt-5 text-xl italic">
               {experienceData[0].date}
             </p>
           </div>
         </div>
-        <div className="flex flex-row">
-          <div className="flex-1 text-right pt-10">
+        <div className="flex flex-row-reverse md:flex-row">
+          <div className="hidden md:block flex-1 text-right pt-10">
             <p className="mr-14 mt-5 text-xl italic">
               {experienceData[1].date}
             </p>
@@ -62,6 +65,9 @@ function Experience() {
             />
           </div>
           <div className="flex-1 pt-10">
+          <p className="md:hidden w-4/5 m-auto ml-14 mt-5 text-xl italic text-left">
+              {experienceData[1].date}
+            </p>
             <ExperienceCard
               title={experienceData[1].title}
               company={experienceData[1].company}

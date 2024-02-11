@@ -19,7 +19,7 @@ const skilllsData = [
 ];
 function Skills() {
   return (
-    <div id="skills" className="py-16 bg-white">
+    <div id="skills" className="py-10 bg-white">
       <div
         className=""
         style={{
@@ -29,8 +29,8 @@ function Skills() {
         }}
       >
         <div className="py-10 bg-blur">
-          <div className="w-4/5 m-auto">
-            <p className="text-5xl font-bold text-white">SKILLS</p>
+          <div className="w-11/12 md:w-4/5 m-auto">
+            <p className="text-4xl md:text-5xl font-bold text-white">SKILLS</p>
             <p className="text-md mt-2 text-white">
               Skills and the profficiency in each skill
             </p>

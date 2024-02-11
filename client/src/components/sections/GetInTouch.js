@@ -4,7 +4,7 @@ import callIcon from "../../assets/call.png";
 import emailIcon from "../../assets/email.png";
 function GetInTouch() {
   return (
-    <div id="get-in-touch" className="bg-white py-16">
+    <div id="get-in-touch" className="bg-white py-10">
       <div
         style={{
           backgroundImage: `url(${contactBg})`,
@@ -13,8 +13,8 @@ function GetInTouch() {
         }}
       >
         <div className="py-10 bg-blur">
-          <div className="w-4/5 m-auto bg-white flex flex-row p-8">
-            <div className="flex-1 text-left pr-8 flex flex-col">
+          <div className="w-4/5 m-auto bg-white flex flex-col-reverse md:flex-row p-8">
+            <div className="flex-1 text-left md:pr-8 flex flex-col mt-8 md:mt-0">
               <p className="text-4xl font-semibold">Send Message</p>
               <hr className="my-1 border-t-4 border-blue-600 w-28" />
               <input
@@ -41,7 +41,7 @@ function GetInTouch() {
                 Send Message
               </button>
             </div>
-            <div className="flex-1 text-left pl-8">
+            <div className="flex-1 text-left md:pl-8">
               <p className="text-4xl font-semibold">Get In Touch</p>
               <hr className="my-1 border-t-4 border-blue-600 w-32" />
               <p className="mt-6 text-lg">
@@ -67,7 +67,7 @@ function GetInTouch() {
               </div>
               <div className="flex flex-row items-center mt-3">
                 <img src={emailIcon} alt="location" className="h-5 w-5 mr-2" />
-                <p className="m-0">mahakagarwal248@gmail.com</p>
+                <p className="m-0 break-all">mahakagarwal248@gmail.com</p>
               </div>
             </div>
           </div>

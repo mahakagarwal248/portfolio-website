@@ -40,7 +40,7 @@ function Portfolio() {
         <p className="text-md mt-2">
           Here is some sample of my work. All projects are done using MERN Stack
         </p>
-        <div className="flex flex-row flex-wrap justify-center">
+        <div className="flex flex-row flex-wrap justify-center w-full sm:w-3/5 lg:w-full m-auto">
           {portfolioData.map((data, index) => (
             <PortfolioCard
               key={index}

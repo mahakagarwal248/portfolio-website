@@ -6,6 +6,7 @@ module.exports = {
       flex: {
         half: "1 1 50%",
         oneThird: "0 0 30%",
+        full: "1 1 100%",
       },
       backgroundColor: {
         blur: "rgba(0, 51, 128, 0.7)",
