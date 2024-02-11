@@ -26,7 +26,7 @@ function About() {
               <img
                 src={profileImage}
                 alt="profile"
-                className="w-44 sm:w-full md:w-40 lg:w-full border-2 border-black rounded-md"
+                className="w-44 sm:w-full md:w-40 lg:w-full xl:w-3/5 border-2 border-black rounded-md"
               />
             </div>
             <div className="flex flex-col justify-between w-full sm:w-3/5 md:w-full lg:w-3/5 mt-5 sm:mt-0 md:mt-5 lg:mt-0 text-left">
@@ -34,13 +34,13 @@ function About() {
                 <b>Name :</b> Mahak Agarwal
               </p>
               <p>
-                <b>Profile :</b> Mahak Agarwal
+                <b>Profile :</b> MERN Stack Developer
               </p>
               <p>
-                <b>Email :</b> Mahak Agarwal
+                <b>Email :</b> mahakagarwal248@gmail.com
               </p>
               <p>
-                <b>Phone :</b> Mahak Agarwal
+                <b>Phone :</b> +91 8941027873
               </p>
             </div>
           </div>
@@ -63,20 +63,21 @@ function About() {
           <p className="text-4xl font-semibold">About Me</p>
           <hr className="my-1 border-t-4 border-blue-600 w-20" />
           <p className="mt-6 text-lg">
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-            Praesent sapien massa, convallis a pellentesque nec, egestas non
-            nisi. Nulla porttitor accumsan tincidunt.
+            I am a proficient MERN Stack Developer currently employed at
+            TechChefz Digital Private Limited since September 2022. Prior to my
+            current position, I completed an internship within the same capacity
+            at the same esteemed company.
           </p>
-          <p className="mt-6 text-lg">
-            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus
-            suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
-            sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+          <p className="mt-4 text-lg">
+            Throughout my career, I have actively contributed to various
+            projects. My adeptness with the MERN Stack, combined with a strong
+            problem-solving acumen, has enabled me to ensure the successful
+            execution of tasks and projects.
           </p>
-          <p className="mt-6 text-lg">
-            Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut
-            lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
-            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+          <p className="mt-4 text-lg">
+            Looking ahead, I am eager to continue leveraging my skills and
+            experience to drive innovation and contribute to the success of
+            future projects and initiatives within the realm of web development.
           </p>
         </div>
       </div>

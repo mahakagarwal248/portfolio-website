@@ -6,16 +6,37 @@ const experienceData = [
     title: "Associate Technology",
     company: "TCZ Digital Private Limited",
     department: "MERN",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+    description: (
+      <ul className="list-disc">
+        <li>
+          Improved customer experiences in hospitality and automobile
+          industries.
+        </li>
+        <li>Led backend development.</li>
+        <li>Integrated diverse APIs for enhanced functionality.</li>
+        <li>
+          Implemented Payment gateway and SAP APIs for smooth transactions.
+        </li>
+      </ul>
+    ),
     date: "September 2022 - Present",
   },
   {
     title: "Intern",
     company: "TCZ Digital Private Limited",
     department: "MERN",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+    description: (
+      <ul className="list-disc">
+        <li>
+          Developed image compression and data encryption modules using MERN
+          stack during internship.
+        </li>
+        <li>
+          Collaborated on a demo project, managing tasks with Trello and
+          adopting clean code practices.
+        </li>
+      </ul>
+    ),
     date: "July 2022 - September - 2022",
   },
 ];
@@ -65,7 +86,7 @@ function Experience() {
             />
           </div>
           <div className="flex-1 pt-10">
-          <p className="md:hidden w-4/5 m-auto ml-14 mt-5 text-xl italic text-left">
+            <p className="md:hidden w-4/5 m-auto ml-14 mt-5 text-xl italic text-left">
               {experienceData[1].date}
             </p>
             <ExperienceCard

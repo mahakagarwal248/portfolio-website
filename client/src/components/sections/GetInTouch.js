@@ -45,10 +45,10 @@ function GetInTouch() {
               <p className="text-4xl font-semibold">Get In Touch</p>
               <hr className="my-1 border-t-4 border-blue-600 w-32" />
               <p className="mt-6 text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam
-                magni ipsum suscipit amet? Autem nemo esse laboriosam ratione
-                nobis mollitia inventore?
+                Let's collaborate! With expertise in MERN Stack development,
+                problem-solving skills, and a passion for innovation, I'm ready
+                to contribute to your projects. Reach out today to discuss how
+                we can work together towards your goals.
               </p>
               <div className="flex flex-row items-center mt-6">
                 <img

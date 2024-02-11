@@ -4,7 +4,7 @@ function ExperienceCard({ title, company, department, description }) {
       <p className="text-3xl font-semibold">{title}</p>
       <p className="text-xl my-1 font-semibold">{company}</p>
       <p className="text-xl my-1 font-semibold">Department - {department}</p>
-      <p className="mt-4">{description}</p>
+      <p className="mt-4 pl-2">{description}</p>
     </div>
   );
 }
