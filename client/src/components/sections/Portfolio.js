@@ -12,7 +12,7 @@ const portfolioData = [
     redirectUrl: "http://insight-learn.easycoder.tech/",
   },
   {
-    text: "It's a Shopping Website",
+    text: "It's an E-commerce Shopping Website",
     imageUrl: ecommImage,
     redirectUrl: "http://ecomm.easycoder.tech/",
   },

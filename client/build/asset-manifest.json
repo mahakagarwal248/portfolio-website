@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24a6e1c2.css",
+    "main.js": "/static/js/main.a1acaeb8.js",
+    "static/media/olp.png": "/static/media/olp.4b74a804bb44e3b4daf2.png",
+    "static/media/banner2.jpg": "/static/media/banner2.ada404b94b0ef3ac5bc8.jpg",
+    "static/media/unnati.png": "/static/media/unnati.8476e9490201ce9a032c.png",
+    "static/media/ecomm.png": "/static/media/ecomm.ea8094795f653a8dc0ff.png",
+    "static/media/easycoder.png": "/static/media/easycoder.6f356529e56c008f0b31.png",
+    "static/media/skillsBg.jpg": "/static/media/skillsBg.6cd22e935312916e9afb.jpg",
+    "static/media/contactBg.jpg": "/static/media/contactBg.6347d6ccc8145ece5b89.jpg",
+    "static/media/stackoverflow.png": "/static/media/stackoverflow.969c6dff7c5bc5cf3f38.png",
+    "static/media/profile.png": "/static/media/profile.0d14c6999b4a5c8e86a7.png",
+    "static/media/location.png": "/static/media/location.9889f16fd73fa486e6e1.png",
+    "static/media/call.png": "/static/media/call.52bf26a594e8d24a8659.png",
+    "static/media/redirect.png": "/static/media/redirect.5d0217a30452675db61c.png",
+    "index.html": "/index.html",
+    "main.24a6e1c2.css.map": "/static/css/main.24a6e1c2.css.map",
+    "main.a1acaeb8.js.map": "/static/js/main.a1acaeb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24a6e1c2.css",
+    "static/js/main.a1acaeb8.js"
+  ]
+}
