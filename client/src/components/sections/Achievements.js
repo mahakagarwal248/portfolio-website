@@ -1,4 +1,3 @@
-import rightArrow from "../../assets/right-arrow.png";
 const achievementsData = [
   {
     description:
@@ -30,9 +29,22 @@ function Achievements() {
         <p className="text-md mt-2 ">My achievements throughout my journey</p>
         <div className="mt-10 text-left ">
           {achievementsData?.map((item, index) => (
-            <div key={index} className="flex flex-col md:flex-row items-center my-3 text-left">
+            <div
+              key={index}
+              className="flex flex-col md:flex-row items-center my-3 text-left"
+            >
               <p className="m-0 mr-2 w-full text-md font-semibold">
-                <img src={rightArrow} alt="arrow" className="h-6 w-6 inline font-semibold" />{" "}
+                <lord-icon
+                  src="https://cdn.lordicon.com/vduvxizq.json"
+                  trigger="loop"
+                  delay="1000"
+                  colors="primary:#3080e8"
+                  style={{
+                    width: "32px",
+                    marginRight: "5px",
+                    verticalAlign: "middle",
+                  }}
+                ></lord-icon>
                 {item?.description}
               </p>
               <button

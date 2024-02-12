@@ -4,7 +4,7 @@ function PortfolioCard({ text, imageUrl, redirectUrl }) {
     window.open(path, "_blank");
   };
   return (
-    <div className="mt-10 text-left flex-full sm:flex-half lg:flex-oneThird shadow-2xl overflow-hidden mx-4">
+    <div className="mt-10 text-left flex-full sm:flex-half lg:flex-oneThird shadow-2xl overflow-hidden mx-4 border-2 border-black rounded-xl">
       <img
         src={imageUrl}
         alt="website"
