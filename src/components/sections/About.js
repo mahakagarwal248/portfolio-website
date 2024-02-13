@@ -1,4 +1,5 @@
-import profileImage from "../../assets/profile.png";
+import { Link } from "react-router-dom";
+import profileImage from "../../assets/profilePicture.png";
 import EducationComp from "../general/EducationComp";
 
 const educationData = [
@@ -26,7 +27,7 @@ function About() {
               <img
                 src={profileImage}
                 alt="profile"
-                className="w-44 sm:w-full md:w-40 lg:w-full xl:w-3/5 border-2 border-black rounded-md"
+                className="w-44 sm:w-full md:w-40 lg:w-full xl:w-4/5 border-2 border-black rounded-md"
               />
             </div>
             <div className="flex flex-col justify-between w-full sm:w-3/5 md:w-full lg:w-3/5 mt-5 sm:mt-0 md:mt-5 lg:mt-0 text-left">
@@ -42,10 +43,28 @@ function About() {
               <p>
                 <b>Phone :</b> +91 8941027873
               </p>
+              <p>
+                <b>LinkedIn :</b>{" "}
+                <Link
+                  to="https://www.linkedin.com/in/mahakagarwal248/"
+                  className="text-sky-400 underline"
+                >
+                  mahakagarwal248
+                </Link>
+              </p>
+              <p>
+                <b>Github :</b>{" "}
+                <Link
+                  to="https://github.com/mahakagarwal248"
+                  className="text-sky-400 underline"
+                >
+                  mahakagarwal248
+                </Link>
+              </p>
             </div>
           </div>
           <div className="text-left mt-6">
-            <p className="font-semibold text-2xl">Education</p>
+            <p className="font-semibold text-2xl text-primaryDataColor">Education</p>
             <div>
               {educationData.map((education, index) => (
                 <EducationComp
@@ -69,10 +88,12 @@ function About() {
             at the same esteemed company.
           </p>
           <p className="mt-4 text-lg">
-            Throughout my career, I have actively contributed to various
-            projects. My adeptness with the MERN Stack, combined with a strong
-            problem-solving acumen, has enabled me to ensure the successful
-            execution of tasks and projects.
+            Throughout my professional journey, I have consistently contributed
+            to diverse projects. My proficiency in the MERN Stack, coupled with
+            a robust problem-solving aptitude, has been instrumental in ensuring
+            the smooth execution of tasks and projects. With a passion for
+            continuous learning and improvement, I am dedicated to delivering
+            high-quality solutions that exceed expectations.
           </p>
           <p className="mt-4 text-lg">
             Looking ahead, I am eager to continue leveraging my skills and
